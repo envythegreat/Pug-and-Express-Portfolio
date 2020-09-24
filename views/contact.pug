@@ -1,0 +1,59 @@
+extends layout.pug
+
+
+block content
+	section#contact(style='padding:40px;padding-right:5px;padding-left:4px;')
+		.container
+			form#contactForm.border.rounded-0.shadow-lg(style='padding: 15px;margin-top: 45px;margin-bottom: 41px;', action='javascript:void();', method='post')
+				.form-row(style='margin-left:0px;margin-right:0px;padding:10px;')
+					.col-md-6(style='padding-left:20px;padding-right:20px;')
+						fieldset
+						legend
+							i.fa.fa-info
+							|  My Information
+						p
+						.table-responsive
+							table.table
+								tbody
+									tr
+										td
+											i.fa.fa-building
+										td KvK: 58314687, BTW: NL223674965B01
+									tr
+										td
+											i.fa.fa-map-marker
+										td Prins Bernhardweg 27, 7241 DH Lochem
+									tr
+										td
+											i.fa.fa-phone
+										td 085 - 301 90 77 
+									tr
+										td
+											i.fa.fa-envelope
+										td info@stackip.nl
+					#message.col-12.col-md-6(style='padding-right:20px;padding-left:20px;')
+						fieldset
+							legend
+								i.fa.fa-envelope
+								|   Contact
+						.form-group.has-feedback
+							input#from_name.form-control(type='text', tabindex='-1', name='from_name', required='', placeholder='First name and surname')
+						.form-group.has-feedback
+							input#from_email.form-control(type='email', name='from_email', required='', placeholder='Your email address')
+						.form-row
+							.col-sm-6
+								.form-group.has-feedback
+									input#from_phone.form-control(type='text', name='subject', placeholder='Subject')
+							.col-sm-6
+								.form-group
+									select#calltime.form-control(name='afdeling', value='Afdeling', required='')
+										option(value='', selected='') Contact Reason
+										option(value='Technische Dienst') Technische Dienst
+										option(value='Webdevelopers') Webdevelopers
+						.form-group
+							textarea#comments.form-control(name='Comments', placeholder='Type your message here ..', rows='5')
+						.form-group
+							button.btn.btn-primary.active.btn-block.border.rounded.border-dark.shadow(style='background-color: #ffffff;color: rgb(0,0,0);font-weight: bold;', type='submit')
+								| Send 
+								i.fa.fa-chevron-circle-right
+						hr

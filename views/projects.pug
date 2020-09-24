@@ -1,0 +1,36 @@
+extends layout.pug
+
+
+block content
+	section(data-aos='fade-left', data-aos-delay='200', data-aos-once='true')
+		.container
+			.intro(style='margin-bottom: 44px;')
+				h2.text-center Projects 
+				p.text-center.text-muted
+					| Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.
+			.row(style='margin-bottom: 40px;')
+				each project in projects
+					.col-auto.col-sm-12.col-md-12.col-lg-4.col-xl-4(style='padding-top: 15px;padding-bottom: 15px;padding-right: 15px;padding-left: 15px;')
+						.bg-light.border.rounded.shadow.card(data-bs-hover-animate='pulse')
+							img.card-img-top(src=`${project.image_urls}`)
+							.card-body
+								h3.text-center.card-title(style='font-family: Antic, sans-serif;color: rgb(81,87,94);margin-top: 0px;')= project.project_name
+								p.card-text(style='font-family: Antic, sans-serif;color: rgb(81,87,94);')
+								p#lorem= project.description
+								a.btn.btn-outline-primary.text-uppercase.text-center.shadow(role='button', style='font-weight: normal;font-family: Antic, sans-serif;opacity: 1;filter: blur(0px) brightness(84%) contrast(90%) grayscale(0%) hue-rotate(0deg) invert(0%) saturate(43%);', href=`/project/${project.id}`, target='_blank') See More
+	//- .projects-horizontal
+	//- 	.container
+	//- 		.intro
+	//- 			h2.text-center Projects 
+	//- 			p.text-center
+	//- 				| Those are some of my Project
+	//- 		.row.projects
+	//- 			each project in projects
+	//- 				.col-sm-6.item(data-aos='fade-up')
+	//- 					.row
+	//- 						.col-md-12.col-lg-5
+	//- 							a(data-toggle='tooltip', data-bs-tooltip='', href='#', title='Click To See Full Project')
+	//- 								img.img-fluid(src=`${project.image_urls}`)
+	//- 						.col
+	//- 							h3.text-center.name= project.project_name
+	//- 							p.description= project.description

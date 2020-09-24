@@ -1,0 +1,43 @@
+extends layout.pug
+
+
+block content
+	div
+	.container
+		.row(style='margin-bottom: 50px;')
+			.col-md-6.col-xl-4
+				img.img-thumbnail.img-fluid.bg-dark.border-dark.shadow-lg(data-aos='fade-right', src=`${myinfo.profileImg}`)
+			.col-md-6.col-xl-8
+				.row.text-center(data-aos='fade-down-left')
+					.col
+						h2.text-center About Me
+						p.text-left= myinfo.description
+				.row.text-left(data-aos='fade-up-left', style='margin-top: 23px;')
+					.col
+						h2.text-center(style='margin-top: 3px;') Contact Information
+						.float-right.media-me
+							h5 Meadia
+							.icons-me
+								each med in myinfo.media
+									a(href=`${med.link}`)
+										i(class=`${med.icon}`, style='font-size: 39px;margin: 10px;margin-right: 20px;')
+						.float-left.info-me
+							ul.list-unstyled
+								each val, index in myinfo.contact
+									li
+										span.title=index
+										span.value=val
+	div(style='margin-bottom: 50px;')
+	.container
+		.row
+			.col-md-12
+				h1.text-center My Skills
+		.row
+			each skill in myinfo.skills
+				.col-md-4(data-aos='fade-up')
+					h2.text-center.d-xl-flex.justify-content-xl-center.align-items-xl-center=skill
+					p#lorem
+						| Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu ac tortor dignissim convallis aenean.
+		.col-md-12.text-center(style='margin-top: 29px;')
+			a.btn.btn-primary.bg-danger.shadow.btnContact(data-aos='fade-up', href='/contact', style='color: rgba(255,255,255,0.93);') Contact Me
+
