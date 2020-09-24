@@ -1,0 +1,36 @@
+extends layout.pug
+
+
+block content
+	.container
+		h1.text-center.my-4
+			| Project Details
+			br
+		.row
+			.col-md-8
+				img.img-fluid(src=`${project.image_urls}`, alt='Alt Text')
+			.col-md-4
+				h3.my-3 Project Description
+				p= project.description
+				h3.my-3 Project Technologies
+				ul.list-unstyled
+					each tec in project.technologies
+						li= tec
+			.col(style='margin-top: 32px;')
+				if project.github_link
+					a.text-uppercase.text-white.btn.btn-primary.shadow.btnContact(href=`${project.github_link}`, style='background-color: rgb(0,0,0);border: none;margin-right: 15px;', target='_blank')
+						i.fa.fa-github(style='font-size: 23px;margin-right: 4px;')
+						|  Github
+				if project.live_link
+					a.text-uppercase.text-white.btn.btn-primary.shadow.btnContact(href=`${project.live_link}`, style='background-color: rgb(0,0,0);font-size: 23;border: none;', target='_blank')
+						i.fa.fa-link(style='font-size: 16px;margin-right: 6px;')
+						|  Live Link
+		h3.my-4
+			| Other Projects
+			br
+		.row
+			each pro in projects
+				.col-sm-6.col-md-3.mb-4
+					a(href=`/project/${pro.id}`)
+						img.img-fluid(src=`${pro.image_urls}`)
+						h4.text-center=pro.project_name
