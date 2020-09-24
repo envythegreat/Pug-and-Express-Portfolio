@@ -1,0 +1,58 @@
+{
+    "projects":[
+        {
+            "id":0,
+            "project_name":"Guessing Game",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit scelerisque mauris pellentesque pulvinar pellentesque. Tristique magna sit amet purus gravida quis blandit turpis cursus.",
+            "technologies":["Javascript / JQuery","Html / Css","Object-Oriented Programming"],
+            "live_link":"https://github.com/envythegreat/oopv2",
+            "github_link":"https://github.com/envythegreat/oopv2",
+            "image_urls": "/static/img/pic1Project1PNG.PNG"
+        },
+        {
+            "id":1,
+            "project_name":"Public API Requests",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit scelerisque mauris pellentesque pulvinar pellentesque. Tristique magna sit amet purus gravida quis blandit turpis cursus.",
+            "technologies":["Javascript / JQuery","Ajax / API","Html / Css"],
+            "live_link":"https://github.com/envythegreat/apiv1",
+            "github_link":"https://github.com/envythegreat/apiv1",
+            "image_urls": "/static/img/pic1Project2PNG.PNG"
+        },
+        {
+            "id":2,
+            "project_name":"Basic Booking App",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit scelerisque mauris pellentesque pulvinar pellentesque. Tristique magna sit amet purus gravida quis blandit turpis cursus.",
+            "technologies":["Html / Css","Javascript / JQuery","Php (PDO)", "SQL"],
+            "live_link":"",
+            "github_link":"",
+            "image_urls":"/static/img/pic1Project3PNG.PNG"
+        },
+        {
+            "id":3,
+            "project_name":"basic School chat App",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit scelerisque mauris pellentesque pulvinar pellentesque. Tristique magna sit amet purus gravida quis blandit turpis cursus.",
+            "technologies":["Html / Css","Javascript / JQuery / Ajax","Php (PDO)", "SQL"],
+            "live_link":"",
+            "github_link":"",
+            "image_urls":"/static/img/pic1Project4PNG.PNG"
+        },
+        {
+            "id":4,
+            "project_name":"basic School Learning",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit scelerisque mauris pellentesque pulvinar pellentesque. Tristique magna sit amet purus gravida quis blandit turpis cursus.",
+            "technologies":["Html / Css","Javascript / JQuery / Ajax","Php (PDO)", "SQL"],
+            "live_link":"",
+            "github_link":"",
+            "image_urls":"/static/img/pic1Project5.PNG"
+        },
+        {
+            "id":5,
+            "project_name":"ScoreBoard App",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit scelerisque mauris pellentesque pulvinar pellentesque. Tristique magna sit amet purus gravida quis blandit turpis cursus.",
+            "technologies":["Html / Css","Javascript", "Reactjs", "Nodejs"],
+            "live_link":"",
+            "github_link":"",
+            "image_urls":"/static/img/pic1Project5.PNG"
+        }
+    ]
+}
